@@ -18,6 +18,7 @@ state_data = pandas.read_csv('50_states.csv')
 states = state_data['state'].to_list()
 
 correct_guesses = []
+states_missed = []
 
 game_is_on = True
 while game_is_on:
@@ -25,6 +26,14 @@ while game_is_on:
     answer_state = screen.textinput(title=f'Guess The State {len(correct_guesses)}/50',
                                     prompt='Name a US State').title()
 
+    # Checks if the user wants to exit
+    if answer_state == 'Exit':
+        for state in states:
+            if state not in correct_guesses:
+                states_missed.append(state)
+        new_file = pandas.DataFrame(states_missed)
+        new_file.to_csv('states_report.csv')
+        break
     # If the state they guessed is in the states and not already guessed:
     if answer_state in states and answer_state not in correct_guesses:
         correct_guesses.append(answer_state)
