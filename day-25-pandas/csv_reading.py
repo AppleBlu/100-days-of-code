@@ -17,10 +17,26 @@ temp_list = data['temp'].to_list()
 number_of_temps = len(temp_list)
 all_temps_added = sum(temp_list)
 avg_temp = all_temps_added / number_of_temps
-print(avg_temp)
 
 # Simpler way
-print(data['temp'].mean())
+avg_temp_2 = data['temp'].mean()
 
 # Getting max temp
-print(data['temp'].max())
+max_temp = data['temp'].max()
+
+# Data in row
+monday_data = data[data.day == 'Monday']
+max_temp_data_row = data[data.temp == max_temp]
+
+monday_condition = monday_data.condition
+monday_temp_c = int(monday_data.temp)
+monday_temp_f = monday_temp_c * 9/5 + 32
+
+# Creating mainframe
+student_scores = {
+    'students': ['ben', 'max', 'sam'],
+    'scores': [32, 42, 12]
+}
+
+new_data = pandas.DataFrame(student_scores)
+new_data.to_csv('new_data_csv.csv')
