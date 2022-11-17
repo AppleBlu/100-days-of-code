@@ -18,7 +18,6 @@ state_data = pandas.read_csv('50_states.csv')
 states = state_data['state'].to_list()
 
 correct_guesses = []
-states_missed = []
 
 game_is_on = True
 while game_is_on:
@@ -28,9 +27,7 @@ while game_is_on:
 
     # Checks if the user wants to exit
     if answer_state == 'Exit':
-        for state in states:
-            if state not in correct_guesses:
-                states_missed.append(state)
+        states_missed = [state for state in states if state not in correct_guesses]
         new_file = pandas.DataFrame(states_missed)
         new_file.to_csv('states_report.csv')
         break
