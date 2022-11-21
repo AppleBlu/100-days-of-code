@@ -34,7 +34,7 @@ import pandas
 #
 # # Creating mainframe
 # student_scores = {
-#     'students': ['ben', 'max', 'sam'],
+#     'students_scores': ['ben', 'max', 'sam'],
 #     'scores': [32, 42, 12]
 # }
 #
