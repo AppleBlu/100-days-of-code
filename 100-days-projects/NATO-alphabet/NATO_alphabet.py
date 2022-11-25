@@ -31,7 +31,12 @@ data_frame = pandas.DataFrame(data)
 nato_dict = {row.letter: row.code for (index, row) in data_frame.iterrows()}
 
 # 2. Create a list of the phonetic code words from a word that the user inputs.
-user_input = input('Enter A Word: ').upper()
-
-nato_list = [nato_dict[letter] for letter in user_input]
-print(nato_list)
+incorrect_input = True
+while incorrect_input:
+    user_input = input('\nEnter A Word: ').upper()
+    try:
+        nato_list = [nato_dict[letter] for letter in user_input]
+    except KeyError:
+        print('\nPlease enter a letters from the alphabet.')
+    else:
+        print(f'\n{nato_list}')
