@@ -1,11 +1,12 @@
 import random
 import smtplib
+import os
 
 with open(file="quotes.txt") as data:
     quotes = data.readlines()
 
 GOOGLE_EMAIL = "codingtest1818@gmail.com"
-PASSWORD = "mqodwegvlghwmwxb"
+PASSWORD = os.environ.get("CODING_EMAIL_PASS")
 
 random_quote = random.choice(quotes)
 

@@ -1,7 +1,8 @@
 import smtplib
+import os
 
 my_google_email = "codingtest1818@gmail.com"
-password = 'mqodwegvlghwmwxb'
+password = os.environ.get("CODING_EMAIL_PASS")
 
 with smtplib.SMTP("smtp.gmail.com") as connection:
     connection.starttls()

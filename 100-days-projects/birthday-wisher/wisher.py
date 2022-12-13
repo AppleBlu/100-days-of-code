@@ -3,6 +3,7 @@ import datetime as dt
 import smtplib
 import random
 import pandas
+import os
 
 # Getting hold the current date and time
 current_date_time = dt.datetime.now()
@@ -11,7 +12,7 @@ current_day = current_date_time.day
 
 # Getting hold of the email login for the email iam going to be sending from
 GOOGLE_EMAIL = "codingtest1818@gmail.com"
-PASSWORD = "mqodwegvlghwmwxb"
+PASSWORD = os.environ.get("CODING_EMAIL_PASS")
 
 list_of_letters = ["letter_1.txt", "letter_2.txt", "letter_3.txt"]
 
