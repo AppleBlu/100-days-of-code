@@ -7,6 +7,12 @@ You cant get hold of this data: 3XX
 You failed or the data does not exist: 4XX
 The server or something not controlled by you has failed: 5XX"""
 
+"""Api commands
+get() - get the data from the api
+post() - add data to the api
+put() - update the data in the api
+delete() - delete date from the api"""
+
 # Trying to receive data from this api
 response = requests.get(url="http://api.open-notify.org/iss-now.json")
 print(response)
