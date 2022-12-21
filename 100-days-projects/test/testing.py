@@ -1,7 +1,6 @@
-with open(file="test_file.txt", mode="r") as data:
-    data_contents = data.read()
+from datetime import datetime
 
-with open(file="test_file.txt", mode="w") as data:
-    data.write("hello world")
+today = datetime.now()
+date = today.date()
 
-
+print(str(date))
