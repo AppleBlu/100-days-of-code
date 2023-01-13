@@ -1,0 +1,32 @@
+    body {
+    background-color: #222831;
+    }
+
+    hr {
+    background-color: #222831;
+    border-color: grey;
+    border-style: solid;
+    height: 0px;
+    border-width: 2px;
+    width: 97%;
+    }
+
+    h1 {
+    color: white;
+    }
+
+    h2 {
+    color: white;
+    }
+
+    h3 {
+    color: white;
+    }
+
+    p {
+    color: #BFEAF5;
+    }
+
+    li {
+    color: #BFEAF5;
+    }
