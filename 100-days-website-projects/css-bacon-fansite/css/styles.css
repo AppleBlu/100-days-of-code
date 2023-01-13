@@ -1,0 +1,23 @@
+h1 {
+color: green;
+font-size: 150px;
+text-transform: capitalize;
+text-shadow: 1px 1px 1px red, 2px 2px 1px black;
+text-decoration: underline;
+text-align: center;
+letter-spacing: 7px;
+}
+
+.bacon {
+background-color: green;
+}
+
+.brocoli {
+background-color: red;
+}
+
+#heading {
+color: red;}
+
+img:hover {
+background-color: blue; }

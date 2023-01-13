@@ -1,3 +1,27 @@
-        body {
-        background-color: #222831;
-        }
+body {
+background-color: #222831;
+} /*Changes the background of everything between the body tags on the html file*/
+
+h1 {
+color: white;
+font-size: 100px;
+} /*Changes all h1 tags to this color and size*/
+
+.myText {
+color: red;
+} /*Changes everything with the class tag myText*/
+
+.repeat {
+font-size: 50px;
+} /*This will keep the color red but increase to 50 size. repeat was a second class added to an element in the html file
+*/
+
+#myH4Element {
+color: green;
+} /*Changes the element with this id tag*/
+
+h2:hover {
+color: gold;
+} /*This is called a sudo class attribute. It will change the color of the text when the mouse is hovering over it*/
+
+
