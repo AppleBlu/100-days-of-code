@@ -1,0 +1,31 @@
+body {
+background-color: white;
+margin: 0px;
+}
+
+.intro-heading {
+background-color: #91D8E4;
+}
+
+
+.top-container {
+background-color: #91D8E4;
+height: 200px;
+width: 200px;
+}
+
+.middle-container {
+background-color: red;
+height: 200px;
+width: 200px;
+}
+
+.bottom-container {
+background-color: blue;
+height: 200px;
+width: 200px;
+}
+
+.heading {
+margin: 0px;
+}
