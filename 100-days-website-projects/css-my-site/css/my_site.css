@@ -1,17 +1,12 @@
 body {
 background-color: white;
 margin: 0px;
+text-align: center;
 }
-
-.intro-heading {
-background-color: #91D8E4;
-}
-
 
 .top-container {
 background-color: #91D8E4;
-height: 200px;
-width: 200px;
+position: relative;
 }
 
 .middle-container {
@@ -27,5 +22,26 @@ width: 200px;
 }
 
 .heading {
-margin: 0px;
+width: 20%;
+margin: 0 auto 0 auto;
+padding-top: 100px;
+}
+
+.pro {
+text-decoration: underline;
+}
+
+.cloud-1 {
+position: absolute;
+right: 300px;
+top: 50px;
+}
+
+.cloud-2 {
+position: absolute;
+left: 300px;
+bottom: 300px;
+}
+
+.mountain {
 }
