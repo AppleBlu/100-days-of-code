@@ -1,30 +1,13 @@
 body {
-background-color: white;
 margin: 0px;
 text-align: center;
+font-family: 'Lato', sans-serif;
 }
 
 .top-container {
-background-color: #91D8E4;
+background-color: #86E5FF;
 position: relative;
-}
-
-.middle-container {
-background-color: red;
-height: 200px;
-width: 200px;
-}
-
-.bottom-container {
-background-color: blue;
-height: 200px;
-width: 200px;
-}
-
-.heading {
-width: 20%;
-margin: 0 auto 0 auto;
-padding-top: 100px;
+height:
 }
 
 .pro {
@@ -43,5 +26,28 @@ left: 300px;
 bottom: 300px;
 }
 
-.mountain {
+h1 {
+font-family: 'Sacramento', cursive;
+width: 30%;
+margin: 0 auto 0 auto;
+padding-top: 125px;
+font-size: 500%;
+color: #0081C9;
+}
+
+h2 {
+font-family: 'Montserrat', sans-serif;
+font-size: 1.8rem;
+color: #0081C9;
+font-weight: normal;
+}
+
+h3 {
+font-family: 'Montserrat', sans-serif;
+color: #11999E
+}
+
+p {
+font-family: 'Lilita One', sans-serif;
+font-size: 20px;
 }
