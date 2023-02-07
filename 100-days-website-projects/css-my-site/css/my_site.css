@@ -1,5 +1,5 @@
 body {
-margin: 0px;
+margin: 0;
 text-align: center;
 font-family: 'Lato', sans-serif;
 }
@@ -7,7 +7,7 @@ font-family: 'Lato', sans-serif;
 .top-container {
 background-color: #86E5FF;
 position: relative;
-height:
+padding-top: 100px;
 }
 
 .pro {
@@ -29,8 +29,7 @@ bottom: 300px;
 h1 {
 font-family: 'Sacramento', cursive;
 width: 30%;
-margin: 0 auto 0 auto;
-padding-top: 125px;
+margin: 50px auto 0 auto;
 font-size: 500%;
 color: #0081C9;
 }
@@ -50,4 +49,34 @@ color: #11999E
 p {
 font-family: 'Lilita One', sans-serif;
 font-size: 20px;
+}
+
+.skill-row {
+width: 50%;
+margin: 100px auto 100px auto;
+line-height: 2;
+}
+
+.coding-image {
+width: 25%;
+float: left;
+margin-right: 30px;
+}
+
+.spanner-image {
+width: 25%;
+float: right;
+margin-left: 30px;
+}
+
+.profile-image {
+width: 10%;
+}
+
+.skills {
+text-align: left;
+}
+
+.skills-heading {
+text-align: center;
 }
