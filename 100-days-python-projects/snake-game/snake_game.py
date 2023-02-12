@@ -1,6 +1,6 @@
 # Importing modules
 from turtle import Screen
-from snake import Snake
+from main import Snake
 from food import Food
 from scoreboard import Score
 import time
