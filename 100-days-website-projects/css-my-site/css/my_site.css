@@ -36,14 +36,15 @@ color: #0081C9;
 
 h2 {
 font-family: 'Montserrat', sans-serif;
-font-size: 1.8rem;
+font-size: 2.8rem;
 color: #0081C9;
-font-weight: normal;
+font-weight: bold;
 }
 
 h3 {
 font-family: 'Montserrat', sans-serif;
-color: #11999E
+color: #11999E;
+font-weight: bold;
 }
 
 p {
@@ -71,6 +72,7 @@ margin-left: 30px;
 
 .profile-image {
 width: 10%;
+margin-top: 50px;
 }
 
 .skills {
@@ -80,3 +82,63 @@ text-align: left;
 .skills-heading {
 text-align: center;
 }
+
+.intro {
+padding-left: 40%;
+padding-right: 40%;
+}
+
+hr {
+    border: 9px dotted #EAF6F6;
+    border-style: none none dotted;
+    width: 6%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact-me-button {
+  background-color: #66BFBF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.bottom-container {
+background-color: #66BFBF;
+padding-bottom: 50px;
+padding-top: 20px;
+}
+
+.copyright {
+margin-bottom: 0px;
+color: #EAF6F6;
+}
+
+.email {
+color: #EAF6F6;
+}
+
+.footer-link {
+color: #11999E;
+font-size: 20px;
+padding-right: 20px;
+}
+
+#github {
+padding-right: 0;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
