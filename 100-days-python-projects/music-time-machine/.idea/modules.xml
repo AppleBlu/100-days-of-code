@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../100-days-python-lessons/day-26-lst-dict-comprehensions/.idea/day-26-lst-dict-comprehensions.iml" filepath="$PROJECT_DIR$/../../100-days-python-lessons/day-26-lst-dict-comprehensions/.idea/day-26-lst-dict-comprehensions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/music-time-machine.iml" filepath="$PROJECT_DIR$/.idea/music-time-machine.iml" />
     </modules>
   </component>
