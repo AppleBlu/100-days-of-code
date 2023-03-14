@@ -11,44 +11,17 @@ driver = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().
 # Pulling up the website below
 driver.get(url="https://www.python.org")
 
-times = []
-names = []
+# Getting the times and names of the events in a selenium object
+event_times = driver.find_elements(by="css selector", value=".event-widget time")
+event_names = driver.find_elements(by="css selector", value=".event-widget ul a")
 
-# Getting the times of the upcoming events
-time_xpaths = ['//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[1]/time',
-               '//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[2]/time',
-               '//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[3]/time',
-               '//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[4]/time',
-               '//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[5]/time']
+# Making a dictionary with names and times
+events = {}
+for n in range(0, len(event_times)):
+    events[n] = {"time": event_times[n].text, "name": event_names[n].text}
 
-
-def get_times(xpath):
-    time = driver.find_element(by="xpath", value=xpath)
-    times.append(f"2023-{time.text}")
-
-
-for path in time_xpaths:
-    get_times(path)
-
-# Getting the names of the upcoming events
-name_xpaths = ['//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[1]/a',
-               '//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[2]/a',
-               '//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[3]/a',
-               '//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[4]/a',
-               '//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[5]/a']
-
-
-def get_names(xpath):
-    name = driver.find_element(by="xpath", value=xpath)
-    names.append(name.text)
-
-
-for path in name_xpaths:
-    get_names(path)
-
-# Turning the lists into a dictionary
-times_and_names = dict(zip(times, names))
-print(times_and_names)
+# Printing the dictionary
+print(events)
 
 # Closing the website
 driver.quit()
