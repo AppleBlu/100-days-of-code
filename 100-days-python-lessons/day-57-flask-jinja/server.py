@@ -6,6 +6,7 @@ import requests
 # Setting the api url's required for the website
 GENDER_API = "https://api.genderize.io?name="
 AGE_API = "https://api.agify.io?name="
+BLOG_URL = "https://api.npoint.io/c790b4d5cab58020d391"
 
 # Creating the flask app
 app = Flask(__name__)
@@ -44,6 +45,17 @@ def guess_age_and_gender(name):
 
     # Rendering the template and passing in data
     return render_template("name_calculator.html", name=name, gender=gender, age=age)
+
+
+# When on the /blog route of the website run this function
+@app.route("/blog")
+def get_blog(name=None):
+    # Getting the data from the api call
+    response = requests.get(url=BLOG_URL)
+    # Turning the data into a json file
+    all_posts = response.json()
+    # Rendering my html with the data passed in as a kwarg
+    return render_template("blog.html", name=name, posts=all_posts)
 
 
 # If name is the same as __main__ then run the app in debug mode
