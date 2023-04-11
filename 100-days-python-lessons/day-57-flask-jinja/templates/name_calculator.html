@@ -5,8 +5,11 @@
     <title>Name calculator</title>
 </head>
 <body>
-    <h1>{{ name }}</h1>
+    <!-- Adding the name passed into the url as a h1 element in title case -->
+    <h1>{{ name.title() }}</h1>
+    <!-- Telling the user what gender we think the name is -->
     <h2>I think your gender is {{ gender }}</h2>
+    <!-- Telling the user what age we think the name is -->
     <h2>And i think your {{ age }} years old</h2>
 </body>
 </html>
