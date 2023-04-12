@@ -4,7 +4,16 @@ background-color: #ff4c68;
 
 h1 {
 font-family: "Montserrat";
+color: white;
 font-size: 3rem;
 line-height: 1.5;
 font-weight: 900;
+}
+
+.container-fluid {
+padding: 3% 15%
+}
+
+.navbar-brand{
+margin-left: 16px;
 }
