@@ -49,15 +49,34 @@ margin: 5% 3% 5% 0;
 /*Title image*/
 .title-image {
 width: 60%;
+margin: 30px;
 transform: rotate(25deg);
 }
 
 /*features*/
 .feature-titles {
-font-family: "Montserrat-bold";
+font-family: "Montserrat";
+font-weight: bold;
 font-size: 1.5rem;
+text-align: center;
 }
 
 .feature-description {
-color: #8F8F8F
+color: #8F8F8F;
+width: 80%;
+text-align: center;
+margin: auto;
+}
+
+.features-section {
+margin: 200px 300px;
+}
+
+.fas {
+font-size: 4rem;
+color: #ef8172;
+width: 100%;
+padding: 50px;
+text-align: center;
+--bs-btn-hover-color: #ff4c68;
 }
