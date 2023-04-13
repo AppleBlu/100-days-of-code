@@ -9,7 +9,7 @@ font-family: "Montserrat";
 
 h1 {
 font-family: "Montserrat";
-font-size: 3rem;
+font-size: 3.5rem;
 line-height: 1.5;
 font-weight: 900;
 }
@@ -38,4 +38,26 @@ padding: 0 18px;
 font-family: "Montserrat-light"
 font-weight: 900;
 font-size: 1.2rem;
+}
+
+/*Download buttons*/
+
+.download-button {
+margin: 5% 3% 5% 0;
+}
+
+/*Title image*/
+.title-image {
+width: 60%;
+transform: rotate(25deg);
+}
+
+/*features*/
+.feature-titles {
+font-family: "Montserrat-bold";
+font-size: 1.5rem;
+}
+
+.feature-description {
+color: #8F8F8F
 }
